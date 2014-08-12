@@ -1,0 +1,69 @@
+This course is designed for who has the basic python experiences. 
+1. Familiar with basic data type in python:
+	int, float, string
+
+2. Master method to manipulate built-in data structure in python:
+	list, tuple, dictionary, set, string
+	
+3. Understand logic control in python:
+	for loop
+	if, elif, else
+	while true
+	break
+	try, except
+
+4. Able to write function oriented script:
+	def, return
+	yield generator
+	
+5. Heard of some common python standard library, and understand file system in OS
+	import os
+	import sys
+	import StringIO
+	
+6. Basic knowledge of objective-oriented-programming
+	class ClassName(object):
+		attribute
+		method
+		special magic method
+	
+If you don't know all this, please take the PYTHON course in www.codeacademy.com
+And read the book "ThinkPython" at http://www.greenteapress.com/thinkpython/thinkpython.pdf
+
+
+The course file system is organized like a tree structure as follow:
+
+Chapter1
+	|--- Section1
+		|--- Lesson01
+			|--- 01_lecture.py
+			|--- 01_practice.py
+			|--- 01_solution.py
+			|--- 01_data.txt
+		|--- Lesson02
+			|--- 02_lecture.py
+			|--- 02_practice.py
+			|--- 02_solution.py
+	|--- Section2
+		|--- Lesson01
+			|--- ...
+		|--- Lesson02
+			|--- ...
+Chapter2
+	|--- Section1
+		|--- Lesson01
+			|--- ...
+
+Chapter: The big topic in Data science. For example, development environment, math, statistical tools
+	Section: The division of a chapter. Discuss one method or one algorithm or one regular task in data science
+		Lesson: the detail point or procedure in a section.
+		
+For each lessons, usually there are four different type of files.
+1. lecture: Full text lecture, example function have been provided. You can just uncomment every single function
+	to learn.
+2. exercise: The brief framework of the code for exercise problem is provided. You have write your own code and
+	run it. The expecting output is given. Then you can exam your returns.
+3. solution: The reference solution code.
+4. supported data and configuration files.
+
+So just follow the schedule, and do all exercise, and enjoy it~  

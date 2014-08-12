@@ -1,0 +1,16 @@
+##coding=utf8
+##By. Sanhe 2014-07-16
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+def norm_dstr(min,max,n): ## 正态分布快速生成器
+    ''' generate n samples obey normal distribution
+    95% percents of samples fall in range(min, max)
+    '''
+    u, v = 0.5*(min+max), float(min+max)/6
+    data = np.random.randn(n) * v + np.ones(n) * u
+    return data
+
+plt.hist(norm_dstr(10,30,100), 15, normed=True)
+plt.show()

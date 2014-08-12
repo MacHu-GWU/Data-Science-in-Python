@@ -1,0 +1,20 @@
+region-centroid-col NUMERIC
+region-centroid-row NUMERIC
+region-pixel-count NUMERIC
+short-line-density-5 NUMERIC
+short-line-density-2 NUMERIC
+vedge-mean NUMERIC
+vegde-sd NUMERIC
+hedge-mean
+hedge-sd
+intensity-mean NUMERIC
+rawred-mean NUMERIC
+rawblue-mean NUMERIC
+rawgreen-mean NUMERIC
+exred-mean NUMERIC
+exblue-mean NUMERIC
+exgreen-mean NUMERIC
+value-mean NUMERIC
+saturation-mean NUMERIC
+hue-mean NUMERIC
+class Nominal

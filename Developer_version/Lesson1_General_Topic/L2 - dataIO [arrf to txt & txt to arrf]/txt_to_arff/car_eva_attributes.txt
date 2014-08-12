@@ -1,0 +1,7 @@
+buying Nominal
+maint Nominal
+doors Nominal
+persons Nominal
+lug_boot Nominal
+safety Nominal
+class Nominal
