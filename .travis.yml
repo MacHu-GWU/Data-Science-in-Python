@@ -1,0 +1,18 @@
+language: python
+
+python:
+  - "3.4"
+
+install:
+  - pip install --editable . # Install it self
+  - pip install -r requirements-test.txt # Install test dependencies
+  - pip install codecov # Install coveralls
+
+script:
+  - pytest tests --cov=data_science_in_python # Run unittest
+
+notifications:
+  email: false # Mute email notification
+
+after_success:
+  - codecov # travis-ci will transfer data to codecov after success
