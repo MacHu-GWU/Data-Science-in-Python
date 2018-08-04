@@ -59,8 +59,8 @@ PACKAGE_NAME="data_science_in_python"
 
 # Python version Used for Development
 PY_VER_MAJOR="3"
-PY_VER_MINOR="4"
-PY_VER_MICRO="6"
+PY_VER_MINOR="5"
+PY_VER_MICRO="3"
 
 #  Other Python Version You Want to Test With
 # (Only useful when you use tox locally)
@@ -138,6 +138,7 @@ BIN_PYTEST="${BIN_DIR}/pytest"
 BIN_SPHINX_START="${BIN_DIR}/sphinx-quickstart"
 BIN_TWINE="${BIN_DIR}/twine"
 BIN_TOX="${BIN_DIR}/tox"
+BIN_JUPYTER="${BIN_DIR}/jupyter"
 
 
 S3_PREFIX="s3://${BUCKET_NAME}/${PACKAGE_NAME}"
@@ -281,7 +282,7 @@ cov: dev_install test_dep ## ** Run Code Coverage test
 tox: test_dep ## ** Run tox
 	${BIN_PIP} install tox
 	( \
-		pyenv local 3.4.4; \
+		pyenv local 3.5.3; \
 		${BIN_TOX}; \
 	)
 
@@ -341,3 +342,8 @@ publish: dev_dep ## ** Publish This Library to PyPI
 	${BIN_PYTHON} setup.py sdist bdist_wheel
 	${BIN_TWINE} upload dist/*
 	-rm -rf build dist .egg ${PACKAGE_NAME}.egg-info
+
+
+.PHONY: notebook
+notebook: ## Run jupyter notebook
+	${BIN_JUPYTER} notebook
